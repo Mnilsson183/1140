@@ -23,10 +23,10 @@ public class Lab7_4 {
             System.out.printf("You picked ROCK and I picked SCISSORS: You win\n");
         } else if(userChoice == 3 && computerChoice == 1){
             System.out.printf("You picked SCISSORS and I picked Rock: I win\n");
-        } else if(userChoice < computerChoice){
-            System.out.printf("You picked %s and I picked %s: I win\n", pickNames[userChoice], pickNames[computerChoice]);
+        } else if(userChoice < computerChoice){ 
+            System.out.printf("You picked %s and I picked %s: I win\n", pickNames[userChoice - 1], pickNames[computerChoice - 1]);
         } else {
-            System.out.printf("You picked %s and I picked %s: You win\n", pickNames[userChoice], pickNames[computerChoice]);
+            System.out.printf("You picked %s and I picked %s: You win\n", pickNames[userChoice - 1], pickNames[computerChoice - 1]);
         }
     }
 }
