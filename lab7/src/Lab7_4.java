@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Lab7_4 {
 
     public static void main(String[] args) {
-        String pickNames[] = {"ROCK", "PAPER", "SCISSORS"};
+        String pickNames[] = {"", "ROCK", "PAPER", "SCISSORS"};
 
         Scanner input = new Scanner(System.in);
 
@@ -26,9 +26,9 @@ public class Lab7_4 {
         } else if(userChoice == 3 && computerChoice == 1){
             System.out.printf("You picked SCISSORS and I picked Rock: I win\n");
         } else if(userChoice < computerChoice){ 
-            System.out.printf("You picked %s and I picked %s: I win\n", pickNames[userChoice - 1], pickNames[computerChoice - 1]);
+            System.out.printf("You picked %s and I picked %s: I win\n", pickNames[userChoice], pickNames[computerChoice]);
         } else {
-            System.out.printf("You picked %s and I picked %s: You win\n", pickNames[userChoice - 1], pickNames[computerChoice - 1]);
+            System.out.printf("You picked %s and I picked %s: You win\n", pickNames[userChoice], pickNames[computerChoice]);
         }
     }
 }
