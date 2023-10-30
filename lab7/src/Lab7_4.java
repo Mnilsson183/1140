@@ -19,7 +19,9 @@ public class Lab7_4 {
                                             // range 1-3
         int computerChoice = (int)(Math.random() * 3 + 1);
 
-        if(userChoice == 1 && computerChoice == 3){
+        if(userChoice == computerChoice){
+            System.out.printf("You picked %s and I picked %s: We tie\n", pickNames[userChoice], pickNames[computerChoice]);
+        } else if(userChoice == 1 && computerChoice == 3){
             System.out.printf("You picked ROCK and I picked SCISSORS: You win\n");
         } else if(userChoice == 3 && computerChoice == 1){
             System.out.printf("You picked SCISSORS and I picked Rock: I win\n");
