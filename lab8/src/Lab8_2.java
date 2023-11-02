@@ -11,6 +11,7 @@ public class Lab8_2 {
 
         int correct = 0;
         for(int i = 0; i < tries; i++){
+            
             int x = (int)(Math.random() * 20) + 1;
             int y = (int)(Math.random() * 20) + 1;
 

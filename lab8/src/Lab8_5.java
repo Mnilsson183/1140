@@ -17,9 +17,11 @@ public class Lab8_5 {
         int min = INF;
         int max = -1 * INF;
 
-        while(input.hasNextInt()){
+        int number = input.nextInt();
+        int i = 0;
+        while(i < number){
             num = input.nextInt();
-            System.out.printf("Number %d : %5d\n", numIndex + 1, num);
+            System.out.printf("Number %2d : %5d\n", i + 1, num);
             if(num < 0){
                 negNums++;
                 negTotal = negTotal + num;
@@ -33,6 +35,7 @@ public class Lab8_5 {
             } else if(num < min){
                 min = num;
             }
+            i++;
         }
         System.out.printf("\nStatistics for Positive values\n");
         System.out.printf("Count of positive numbers        : %2d\n", posNums);

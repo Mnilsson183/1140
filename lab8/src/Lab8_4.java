@@ -24,11 +24,11 @@ public class Lab8_4 {
                 winnings--;
             }
         }
-        System.out.printf("After 10,000 runs the player made $%d", winnings);
+        System.out.printf("After 10,000 runs the player made $%d\n", winnings);
         if(winnings > 0){
-            System.out.printf("This is a bad game for the casino");
+            System.out.printf("This is a bad game for the casino\n");
         } else{
-            System.out.printf("This is a good game for the casino");
+            System.out.printf("This is a good game for the casino\n");
         }
 
     }
