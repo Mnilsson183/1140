@@ -10,7 +10,8 @@ public class Lab8_2 {
         
 
         int correct = 0;
-        for(int i = 0; i < tries; i++){
+        int i = 0;
+        while(i < tries){
             
             int x = (int)(Math.random() * 20) + 1;
             int y = (int)(Math.random() * 20) + 1;
@@ -49,6 +50,7 @@ public class Lab8_2 {
             } else{
                 System.out.println("Incorrect");
             }
+            i++;
         }
         System.out.printf("You got %d correct answer out of %d questions given\n", correct, tries);
     }

@@ -9,7 +9,8 @@ public class Lab8_4 {
         int d2;
         int d3;
         int winnings = 0;
-        for(int i = 0; i < 10000; i++){
+        int i = 0;
+        while(i < 10000){
             d1 = (int)(Math.random() * 6) + 1;
             d2 = (int)(Math.random() * 6) + 1;
             d3 = (int)(Math.random() * 6) + 1;
@@ -23,7 +24,9 @@ public class Lab8_4 {
             } else {
                 winnings--;
             }
+            i++;
         }
+
         System.out.printf("After 10,000 runs the player made $%d\n", winnings);
         if(winnings > 0){
             System.out.printf("This is a bad game for the casino\n");

@@ -10,13 +10,15 @@ public class Lab8_1 {
 
         double prev_har = 0;
         double harmonicVal;
-        for(int i = 1; i <= index; i++){
+        int i = 1;
+        while(i <= index){
             System.out.printf("K = %4d  ", i);
             double inv = 1f/i;
             System.out.printf("term = %8f  ", inv);
             harmonicVal = prev_har + 1f/i;
             System.out.printf("Harmonic value = %8f\n", harmonicVal);
             prev_har = harmonicVal;
+            i++;
         }
     }
 }
