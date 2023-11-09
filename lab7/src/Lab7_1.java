@@ -30,5 +30,7 @@ public class Lab7_1 {
             System.out.printf("%d is not a palindrome", valueBackup);
         }
         System.out.printf("\n\n");
+    
+        input.close();
     }
 }

@@ -44,6 +44,7 @@ public class Lab6_2 {
             total = x % y;
         } else{
             System.out.println("Fatal error how did we get here");
+            input.close();
             return;
         }
         
@@ -52,5 +53,7 @@ public class Lab6_2 {
         } else{
             System.out.println("Incorrect");
         }
+    
+        input.close();
     }
 }

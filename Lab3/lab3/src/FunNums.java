@@ -20,5 +20,7 @@ public class FunNums {
         
         int total = (1 * x) + (11 * x) + (111 * x) + (1111 * x);
         System.out.println('\n' + "\nThe sum of the sequence is   : " + total);
+    
+        input.close();
     }
 }

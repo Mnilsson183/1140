@@ -30,5 +30,7 @@ public class Lab7_4 {
         } else {
             System.out.printf("You picked %s and I picked %s: You win\n", pickNames[userChoice], pickNames[computerChoice]);
         }
+    
+        input.close();
     }
 }

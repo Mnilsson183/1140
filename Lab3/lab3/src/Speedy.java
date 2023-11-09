@@ -31,6 +31,8 @@ public class Speedy {
  
         
         System.out.printf("Your average speed was                 : %.2fkm/s\n", speed);
+
+        input.close();
     }
 }
 /*

@@ -21,5 +21,7 @@ public class EqTester {
       
       System.out.println();
       System.out.println("The value of the expression is    : " + value);
-  }  
+  
+      input.close();
+    }  
 } 

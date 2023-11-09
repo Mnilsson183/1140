@@ -33,6 +33,7 @@ public class Lab4_3 {
         
         int sum = d1 + d2 + d3 + d4 + d5;
         System.out.printf("The sum of the digits in %d is : %d\n", num,  sum);
-    }
     
+        input.close();
+    }
 }

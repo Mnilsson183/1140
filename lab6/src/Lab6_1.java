@@ -40,9 +40,12 @@ public class Lab6_1 {
             total = x % y;
         } else{
             System.out.println("Unfortunatly the opperator that you gave is not valid");
+            input.close();
             return;
         }
         
         System.out.printf("%d %c %d = %d\n", x , opp, y, total);
+    
+        input.close();
     }
 }

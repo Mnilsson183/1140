@@ -34,5 +34,7 @@ public class Lab4_4 {
         System.out.println("Line 4 : " + input.next());
         input.next();
         System.out.println("Line 4 : " + input.next());
+    
+        input.close();
     }
 }

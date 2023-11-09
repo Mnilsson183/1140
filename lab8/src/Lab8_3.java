@@ -28,5 +28,6 @@ public class Lab8_3 {
             }
             i++;
         }
+        input.close();
     }
 }

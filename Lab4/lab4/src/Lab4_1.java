@@ -36,6 +36,6 @@ public class Lab4_1 {
         System.out.printf("\nTotal SECONDS during that time period is : %d\n", sumSeconds);
         
         
-        
+        input.close();
     }
 }

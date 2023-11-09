@@ -34,5 +34,6 @@ public class Hello4 {
         // print the perimeter
         int perim = (2 * length) + (2 * width);
         System.out.println("The perimeter of your rectangle is : " + perim);
+        input.close();
     }
 }

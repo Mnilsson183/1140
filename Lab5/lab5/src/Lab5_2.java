@@ -51,5 +51,7 @@ public class Lab5_2 {
         System.out.println("Your difference is                                         : " + (Permin - reversed));
         System.out.println("The difference reversed is                                 : " + (diffReversed));
         System.out.println("The sum of the two differences is MAGICALLY                : " + (diffReversed + (Permin - reversed)));
+    
+        input.close();
     }
 }

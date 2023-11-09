@@ -20,5 +20,7 @@ public class Lav7_2 {
             System.out.printf(", and its mixed fraction is %d + %d / %d", (numerator / denominator), leftovers, denominator);
         }
         System.out.printf("\n");
+    
+        input.close();
     }
 }

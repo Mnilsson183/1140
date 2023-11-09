@@ -49,5 +49,7 @@ public class Lab5_3 {
         double distance = RADUIS * Math.acos(a);
         
         System.out.printf("\nComputed Distance     : %d Km\n", Math.round(distance));
+    
+        input.close();
     }
 }

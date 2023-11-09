@@ -64,6 +64,6 @@ public class Lab4_5 {
         
         System.out.println(out);
         
-
+        input.close();
     }
 }

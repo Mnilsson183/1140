@@ -41,5 +41,7 @@ public class Lab4_2 {
         System.out.printf("Number of whole HOURS   : %3d\n", hours);
         System.out.printf("Number of whole MINUTES : %3d\n", minutes);
         System.out.printf("Number of       SECONDS : %3d\n", seconds);
+    
+        input.close();
     }
 }

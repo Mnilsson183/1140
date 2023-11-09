@@ -143,5 +143,7 @@ public class Labb6_3 {
         double total = workDayOver + weekendDayOver + workDayReg + weekendDayReg;
         
         System.out.printf("Total Salary              :$ %7.2f\n", total);
+    
+        input.close();
     }
 }

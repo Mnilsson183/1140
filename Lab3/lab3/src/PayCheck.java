@@ -10,7 +10,6 @@
  */
 import java.util.Scanner;
 import java.io.File;
-import java.io.FileNotFoundException;
 
 public class PayCheck {
 
@@ -58,6 +57,8 @@ public class PayCheck {
         System.out.printf("Weekend earnings          : $%.2f\n\n", weekendPay);
         
         System.out.printf("Total Salary              : $%.2f\n", (hourly * total));
+    
+        payData.close();
     }
     
 }

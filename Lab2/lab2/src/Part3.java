@@ -19,5 +19,7 @@ public class Part3 {
         System.out.println();
         System.out.println("     1    2    3    4");
         System.out.println(num + "    " + num * 1 + "   " + num * 2 + "   " + num * 3 + "   " + num * 4 + "    ");
+    
+        input.close();
     }
 }

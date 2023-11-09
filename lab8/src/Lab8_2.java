@@ -26,6 +26,7 @@ public class Lab8_2 {
             System.out.print("Question :   ");
             System.out.printf("%d %c %d = ", x, opp, y);
             int answer = input.nextInt();
+            input.close();
         
             int total = 0;
         
@@ -53,5 +54,6 @@ public class Lab8_2 {
             i++;
         }
         System.out.printf("You got %d correct answer out of %d questions given\n", correct, tries);
+        
     }
 }

@@ -7,7 +7,6 @@ public class Lab8_5 {
         File file = new File("/home/morgan/Desktop/1140/lab8/src/Lab8Data.txt");
         Scanner input = new Scanner(file);
 
-        int numIndex = 0;
         int num;
 
         int negNums = 0;
@@ -48,5 +47,7 @@ public class Lab8_5 {
         System.out.printf("\nOverall Stats\n");
         System.out.printf("Maximum number                   : %2d\n", max);
         System.out.printf("Minimum number                   : %2d\n", min);
+    
+        input.close();
     }
 }

@@ -32,5 +32,6 @@ public class Hello3 {
  System.out.println( "Difference of the two numbers is : " + difference);
  System.out.println( "Product of the two numbers is. : " + product);
  
+ input.close();
  } // end method main
 } 

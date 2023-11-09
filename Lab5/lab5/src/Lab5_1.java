@@ -58,5 +58,7 @@ public class Lab5_1 {
         System.out.printf("Friday     earnings       :$   %7.2f\n", fridayEarning);
         System.out.printf("Saturday   earnings       :$   %7.2f\n", saturdayEarning);
         System.out.printf("Sunday     earnings       :$   %7.2f\n", sundayEarning);
+    
+        input.close();
     }
 }

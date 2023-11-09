@@ -30,8 +30,7 @@ public class Part4 {
         System.out.println();
         System.out.println("Thank you and have a nice day!");
 
-
-        
+        input.close();        
     }
     
 }

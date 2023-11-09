@@ -20,5 +20,7 @@ public class Lab8_1 {
             prev_har = harmonicVal;
             i++;
         }
+
+        input.close();
     }
 }

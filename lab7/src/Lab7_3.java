@@ -32,5 +32,6 @@ public class Lab7_3 {
             System.out.printf("The point (%d,%d) is not contained with the rectangle\n", point_x, point_y);
         }
 
+        input.close();
     }
 }

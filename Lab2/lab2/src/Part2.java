@@ -31,5 +31,6 @@ public class Part2 {
         
         System.out.println("X / Y = " + (x / y));
         
+        input.close();
     }
 }
