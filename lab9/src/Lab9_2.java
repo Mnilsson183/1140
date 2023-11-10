@@ -4,7 +4,7 @@ public class Lab9_2{
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
-		System.out.printf("Multiple choice grading\n");
+		System.out.printf("\nMultiple choice grading\n");
 		System.out.printf("Enter answer key     : ");
 		String key = input.nextLine();
 		System.out.printf("Enter student answers: ");

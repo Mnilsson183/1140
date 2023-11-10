@@ -12,7 +12,7 @@ public class Lab9_3{
 			return;
 		}
 
-		System.out.printf("Exam grading");
+		System.out.printf("Exam grading\n");
 
 		String quizname = input.nextLine();
 		System.out.println(quizname);
@@ -37,7 +37,7 @@ public class Lab9_3{
 			totalScore += score;
 			System.out.printf("%3d   : %s\n", score, name);
 		}
-		System.out.printf("Class average = %f\n",(float)totalScore / (float)answerKey.length());
+		System.out.printf("Class average = %f\n",(float)totalScore / (float) quizNum);
 		input.close();
 	}
 }

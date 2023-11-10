@@ -30,7 +30,7 @@ public class Lab9_4{
 					break;
 				case 3:
 					for(int i = rows; i > 0; i--){
-						for(int j = 0; j < i - 1; j++){
+						for(int j = 0; j < i; j++){
 							System.out.printf("  ");
 						}
 						for(int j = rows - i + 1; j > 0; j--){
@@ -41,7 +41,7 @@ public class Lab9_4{
 					break;
 				case 4:
 					for(int i = 0; i < rows; i++){
-						for(int j = 0; j < i + 1; j++){
+						for(int j = 0; j < i; j++){
 							System.out.printf("  ");
 						}
 						for(int j = 0; j < rows - i; j++){
@@ -51,11 +51,16 @@ public class Lab9_4{
 					}
 					break;
 					
-			
 				default:
 					System.err.println("You messed up");
 					return;
 			}
+			System.out.print("Do you wish to do another (Y/N)? : ");
+			char repeat = input.next().charAt(0);
+			if(repeat == 'n' || repeat == 'N'){
+				return;
+			}
+			
 		}
 	}
 }
