@@ -17,5 +17,6 @@ public class Lab9_5{
 			}
 			System.out.printf("\n");
 		}
+		input.close();
 	}	
 }

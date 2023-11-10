@@ -25,6 +25,7 @@ public class Lab9_3{
 		String name;
 		int totalScore = 0;
 		int score = 0;
+		
 		for(int quiz = 0 ; quiz < quizNum; quiz++){
 			score = 0;
 			answers = input.next();

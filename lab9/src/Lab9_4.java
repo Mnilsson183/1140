@@ -60,7 +60,7 @@ public class Lab9_4{
 			if(repeat == 'n' || repeat == 'N'){
 				return;
 			}
-			
+			input.close();
 		}
 	}
 }
