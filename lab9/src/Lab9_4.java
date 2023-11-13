@@ -8,8 +8,16 @@ public class Lab9_4{
 			System.out.printf("Pattern generator program\n");
 			System.out.printf("Choose pattern (1-4) : ");
 			int pattern = input.nextInt();
+			if(pattern < 1 || pattern > 4){
+				System.out.println("Incorrect – must be between 1 – 4");
+				return;
+			}
 			System.out.printf("How many rows(3-9)   : ");
 			int rows = input.nextInt();
+			if(rows < 3 || rows > 9){
+				System.out.println("Incorrect – must be between 3 - 9");
+				return;
+			}
 
 			switch (pattern) {
 				case 1:

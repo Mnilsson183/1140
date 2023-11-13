@@ -7,6 +7,11 @@ public class Lab9_5{
 		System.out.println("Pyramid shapes Program");
 		System.out.printf("How many rows in your pyramid ( 3 - 9): ");
 		int rows = input.nextInt();
+		if(rows < 3 || rows > 9){
+			System.out.println("Incorrect rows must be inbetween 3 and 9");
+			input.close();
+			return;
+		}
 
 		for(int i = 0; i < rows; i++){
 			for(int j = 0; j < rows - i; j++){
