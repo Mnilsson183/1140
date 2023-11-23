@@ -6,10 +6,26 @@ public class Lab9_4{
 
 		while(true){
 			System.out.printf("Pattern generator program\n");
-			System.out.printf("Choose pattern (1-4) : ");
-			int pattern = input.nextInt();
-			System.out.printf("How many rows(3-9)   : ");
-			int rows = input.nextInt();
+			int pattern;
+			while (true) {
+				System.out.printf("Choose pattern (1-4) : ");
+				pattern = input.nextInt();
+				if(pattern >= 1 && pattern <= 4){
+					break;
+				} else{
+					System.out.printf("Incorrect – must be between 1 – 4\n\n");
+				}
+			}
+			int rows;
+			while (true) {
+				System.out.printf("How many rows(3-9)   : ");
+				rows = input.nextInt();
+				if(rows >= 3 && rows <= 9){
+					break;
+				} else{
+					System.out.printf("Incorrect – must be between 3 – 9\n\n");
+				}
+			}
 
 			switch (pattern) {
 				case 1:
@@ -58,9 +74,9 @@ public class Lab9_4{
 			System.out.print("Do you wish to do another (Y/N)? : ");
 			char repeat = input.next().charAt(0);
 			if(repeat == 'n' || repeat == 'N'){
+				input.close();
 				return;
 			}
-			input.close();
 		}
 	}
 }

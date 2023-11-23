@@ -6,9 +6,10 @@ public class Lab9_3{
 		Scanner input;
 		try {
 			File file = new File("/home/morgan/Desktop/1140/lab9/src/quizdata.txt");
-			input = new Scanner(file);	
+            input = new Scanner(file);	
 		} catch (Exception e) {
 			System.err.println("No file found at path");
+            e.printStackTrace();
 			return;
 		}
 

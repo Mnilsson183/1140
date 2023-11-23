@@ -4,3 +4,6 @@
 /lab7/build/
 /lab9/nbproject/private/
 
+*.class
+*.properties
+*private*
