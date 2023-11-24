@@ -5,7 +5,6 @@ public class Lab9_5{
 		Scanner input = new Scanner(System.in);
 		while(true){
 			System.out.println("Pyramid shapes Program");
-			System.out.printf("How many rows in your pyramid ( 3 - 9): ");
 			int rows;
 			while(true){
 				System.out.printf("How many rows in your pyramid ( 3 - 9): ");
@@ -31,7 +30,7 @@ public class Lab9_5{
 			char repeat = input.next().charAt(0);
 			if(repeat == 'n' || repeat == 'N'){
 				input.close();
-				return;
+				break;
 			}
 		}
 	}	

@@ -75,7 +75,7 @@ public class Lab9_4{
 			char repeat = input.next().charAt(0);
 			if(repeat == 'n' || repeat == 'N'){
 				input.close();
-				return;
+				break;
 			}
 		}
 	}
