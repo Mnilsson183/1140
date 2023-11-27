@@ -2,6 +2,7 @@
 public class Lab10_2{
 	public static void main(String[] args) {
 
+		// no working
 		boolean debug = true;
 		
 		final int SET_SIZE = 15;
