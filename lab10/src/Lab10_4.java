@@ -12,7 +12,7 @@ public class Lab10_4 {
         int value;
         int tries = 0;
         while (true) {
-            value = (int)(Math.random() * rangeMax);
+            value = (int)(Math.random() * rangeMax + 1);
             System.out.printf("Number %d = %d\n", tries, value);
             if(checkMap[value] == false){
                 checkMap[value] = true;
