@@ -1,6 +1,7 @@
 public class Lab10_5 {
     public static void main(String[] args) {
-        final int MAX_SIZE = 15;
+        System.out.println("Yet More Array Processing");
+        final int MAX_SIZE = 100;
         
         int[] values = new int[MAX_SIZE];
         System.out.print("List is :");
@@ -14,7 +15,7 @@ public class Lab10_5 {
         int seq = 0;
         int seqIndex = 0;
         for(int i = 0; i < values.length - 1; i++){
-            if(values[i] < values[i + 1]){
+            if(values[i] <= values[i + 1]){
                 seq++;
             } else {
                 seq = 1;

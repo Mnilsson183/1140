@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Lab10_4 {
     public static void main(String[] args) {
+        System.out.println("Using Arrays for Statistics Fun");
         Scanner input = new Scanner(System.in);
         System.out.print("What is the range of values you wish to test 0 .. ? :");
         int rangeMax = input.nextInt();
