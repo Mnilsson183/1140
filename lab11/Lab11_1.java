@@ -1,25 +1,24 @@
 public class Lab11_1 {
     public static void main(String[] args) {
-            int rowLength = 4;
-            int columnLength = 4;
+            int length = 4;
             int[][] magicMatrix = { {1, 1, 1, 1}, 
                                     {1, 1, 1, 1}, 
                                     {1, 1, 1, 1}, 
                                     {1, 1, 1, 1} };
         
-            int[] rowSum = new int[rowLength];
-            int[] columnSum = new int[columnLength];
+            int[] rowSum = new int[length];
+            int[] columnSum = new int[length];
 
-        for(int row = 0; row < rowLength; row++){
+        for(int row = 0; row < length; row++){
             int rowCurrentValue = 0;
-                for(int column = 0; column < columnLength; column++){
+                for(int column = 0; column < length; column++){
                     rowCurrentValue += magicMatrix[row][column]; 
                 }
                 rowSum[row] = rowCurrentValue;
         }
-        for(int column = 0; column < columnLength; column++){
+        for(int column = 0; column < length; column++){
             int columnCurrentValue = 0;
-                for(int row = 0; row < rowLength; row++){
+                for(int row = 0; row < length; row++){
                     columnCurrentValue += magicMatrix[row][column]; 
                 }
             columnSum[column] = columnCurrentValue;
@@ -29,7 +28,7 @@ public class Lab11_1 {
         // use fn
         boolean isGood = true;
         int goodValue = rowSum[0];
-        for(int i = 0; i < rowLength; i++){
+        for(int i = 0; i < length; i++){
                 System.out.printf("row %d = %d ", i, rowSum[i]);
                 if(rowSum[i] != goodValue){
                     isGood = false;
@@ -38,7 +37,7 @@ public class Lab11_1 {
                     System.out.printf("OKAY\n");
                 }
         }
-        for(int i = 0; i < columnLength; i++){
+        for(int i = 0; i < length; i++){
                 System.out.printf("col %d = %d ", i, columnSum[i]);
                 if(columnSum[i] != goodValue){
                     isGood = false;
@@ -50,9 +49,9 @@ public class Lab11_1 {
 
         int majorSum = 0;
         int minorSum = 0;
-        for(int i = 0; i < Math.min(columnLength, rowLength); i++){
+        for(int i = 0; i < length; i++){
                 majorSum += magicMatrix[i][i];
-                minorSum += magicMatrix[i][Math.min(columnLength, rowLength) - i - 1];
+                minorSum += magicMatrix[i][length - i - 1];
         }
         System.out.printf("Major Diagonal = %d ", majorSum);
         if(majorSum == goodValue){

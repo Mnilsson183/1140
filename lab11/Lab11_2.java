@@ -58,18 +58,11 @@ public class Lab11_2 {
             System.out.println();
         }
 
+        //  prints the coords and the value of the error
         for(int i = 0; i < BOARDSIZE; i++){
             if(badRow[i] == true){
                 System.out.printf("ISSUE at ( %d , %d ) extra %d\n", badRowSpots[i] + 1, i + 1, badRowValue[i]);
             }
         }
-        // for(int i = 0; i < BOARDSIZE; i++){
-        //     if(badColumn[i] == true){
-        //         if(badRowSpots[i] != i){
-        //             System.out.printf("ISSUE at ( %d , %d ) extra %d\n", i + 1, badColumnSpots[i] + 1, badColumnValue[i]);
-        //         }
-                
-        //     }
-        // }
     }
 }
