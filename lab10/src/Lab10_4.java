@@ -8,25 +8,30 @@ public class Lab10_4 {
         int rangeMax = input.nextInt();
         input.close();
 
-        boolean[] checkMap = new boolean[rangeMax];
+        boolean[] checkMap = new boolean[rangeMax + 1];
         int value;
         int tries = 0;
-        while (true) {
-            value = (int)(Math.random() * rangeMax + 1);
+        int count = 0;
+
+        while (count < rangeMax + 1) {
+            value = (int)(Math.random() * (rangeMax + 1));
             System.out.printf("Number %d = %d\n", tries, value);
             if(checkMap[value] == false){
                 checkMap[value] = true;
+                count++;
             }
-            for(int i = 0; i < checkMap.length; i++){
-                if(checkMap[i] == false){
-                    break;
-                }
-                if(i == checkMap.length - 1){
-                    System.out.printf("It took %d draws to pick every value in the range 0 to 10\n", tries);
-                    return;
-                }
-            }
+            // for(int i = 0; i < checkMap.length; i++){
+            //     if(checkMap[i] == false){
+            
+            //         break;
+            //     }
+            //     if(i == checkMap.length){
+            //         return;
+            //     }
+            // }
             tries++;
         }
+                  System.out.printf("It took %d draws to pick every value in the range 0 to 10\n", tries);
+  
     }
 }

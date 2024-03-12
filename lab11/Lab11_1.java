@@ -2,7 +2,7 @@ public class Lab11_1 {
     public static void main(String[] args) {
             int length = 4;
             int[][] magicMatrix = { {1, 1, 1, 1}, 
-                                    {1, 1, 1, 1}, 
+                                    {1, 2, 1, 1}, 
                                     {1, 1, 1, 1}, 
                                     {1, 1, 1, 1} };
         

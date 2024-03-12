@@ -69,8 +69,10 @@ public class Lab11_3 {
         for(int x = 0; x < mapMaxWidth; x++){
             for(int y = 0; y < mapMaxHeight; y++){
                 if(map[x][y] == BOMB){
-                    System.out.printf("%c ", 66);
-                } else{
+                    System.out.printf("%c ", '*');
+                } else if(map[x][y] == 0){
+                    System.err.printf("%c ", '.');
+                }else{
                     System.out.printf("%d ", map[x][y]);
                 }
             }

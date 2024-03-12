@@ -1,7 +1,7 @@
 public class Lab10_5 {
     public static void main(String[] args) {
         System.out.println("Yet More Array Processing");
-        final int MAX_SIZE = 100;
+        final int MAX_SIZE = 10;
         
         int[] values = new int[MAX_SIZE];
         System.out.print("List is :");
